@@ -95,6 +95,7 @@ function toggle_tile(tile_id)
         state[tile_id] = true
     }
     save_state(state);
+    // noinspection JSIgnoredPromiseFromCall
     check_all_true();
 }
 
@@ -115,4 +116,3 @@ async function check_all_true()
         window.scrollTo(0,0);
     }
 }
-
