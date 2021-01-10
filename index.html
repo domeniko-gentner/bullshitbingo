@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preload" href="css.css" as="style" media="screen">
+        <link rel="preload" href="js.js" as="script" media="screen">
+        <link rel="stylesheet" href="css.css" media="screen">
+        <script defer src="js.js"></script>
+        <title>Bullshit Bingo</title>
+    </head>
+    <body>
+        <div class="banner">Bullshit Bingo</div>
+        <div class="container">
+            <div id="title">The title</div>
+            <div class="bingo-container">
+                <div onclick="toggle_tile(1);" id="1" class="bingo-item">1</div>
+                <div onclick="toggle_tile(2);" id="2" class="bingo-item">2</div>
+                <div onclick="toggle_tile(3);" id="3" class="bingo-item">3</div>
+                <div onclick="toggle_tile(4);" id="4" class="bingo-item">4</div>
+                <div onclick="toggle_tile(5);" id="5" class="bingo-item">5</div>
+                <div onclick="toggle_tile(6);" id="6" class="bingo-item">6</div>
+                <div onclick="toggle_tile(7);" id="7" class="bingo-item">7</div>
+                <div onclick="toggle_tile(8);" id="8" class="bingo-item">8</div>
+                <div onclick="toggle_tile(9);" id="9" class="bingo-item">9</div>
+                <div onclick="toggle_tile(10);" id="10" class="bingo-item">10</div>
+                <div onclick="toggle_tile(11);" id="11" class="bingo-item">12</div>
+                <div onclick="toggle_tile(12);" id="12" class="bingo-item">11</div>
+                <div onclick="toggle_tile(13);" id="13" class="bingo-item">13</div>
+                <div onclick="toggle_tile(14);" id="14" class="bingo-item">14</div>
+                <div onclick="toggle_tile(15);" id="15" class="bingo-item">15</div>
+                <div onclick="toggle_tile(16);" id="16" class="bingo-item">16</div>
+                <div onclick="toggle_tile(17);" id="17" class="bingo-item">17</div>
+                <div onclick="toggle_tile(18);" id="18" class="bingo-item">18</div>
+                <div onclick="toggle_tile(19);" id="19" class="bingo-item">19</div>
+                <div onclick="toggle_tile(20);" id="20" class="bingo-item">20</div>
+                <div onclick="toggle_tile(21);" id="21" class="bingo-item">21</div>
+                <div onclick="toggle_tile(22);" id="22" class="bingo-item">22</div>
+                <div onclick="toggle_tile(23);" id="23" class="bingo-item">23</div>
+                <div onclick="toggle_tile(24);" id="24" class="bingo-item">24</div>
+                <div onclick="toggle_tile(25);" id="25" class="bingo-item">25</div>
+            </div>
+        </div>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function(){
+            shuffle_tiles();
+            apply_state();
+        });
+    </script>
+    </body>
+</html>
